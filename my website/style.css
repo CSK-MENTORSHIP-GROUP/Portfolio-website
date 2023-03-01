@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background: linear-gradient(to left, green , yellow);
+}
+nav{
+    width: 100%;
+    height: 100px;
+    background: grey;
+
+}
+nav ul{
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+} 
+nav ul li a:hover{
+    color: red;
+}
+.img-container{
+height: 500px;
+display: flex;
+width: 500px;
+/* background: blue; */
+/* justify-content: center; */
+align-items: center;
+border-radius: 50%;
+margin-left: -220px;
+box-shadow: 0 0 5px rgb(223, 4, 4);
+}
+.potrait img{
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 220px;
+}
+
+.home-page{
+    display: flex;
+}
+
+.text{
+    background-color: #5F5F46;
+    width: 750px;
+    height: 35vh;
+    margin-left: 8rem;
+    margin-top: 9rem;
+    padding: 20px;
+    border-radius: 1rem;
+    border: 1px solid rgb(213, 211, 211);
+}
+.text p{
+    color: white;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 20px;
+
+}
+
+.description{
+    position: relative;
+}
+.description h3{
+    position: absolute;
+    top: 6rem;
+    left: 22rem;
+    font-weight: bolder;
+    font-size: 2rem;
+
+}
+
+
+.formTitle{
+    font-size: 17px;
+    font-weight: 500;
+   text-align: center;
+}
+ .myForm {
+    max-width: 500px;
+
+     margin: 0 auto;
+    
+    
+    padding: 20px;
+     
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #EAEADB;
+  } 
+
+   input,
+  textarea {
+    display: block;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    resize: none;
+  } 
+   
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:  0.3s ease; 
+  }
+   
+  
+  button:hover {
+    background-color: rgba(173, 18, 187, 0.56);
+    color: rgba(200, 246, 14, 0.542);
+  }
+   
