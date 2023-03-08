@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    overflow-x: hidden;
 }
 body{
     background: linear-gradient(to left, green , yellow);
@@ -29,6 +30,11 @@ nav ul li a{
 nav ul li a:hover{
     color: red;
 }
+
+.home-page{
+    display: flex;
+}
+
 .img-container{
 height: 500px;
 display: flex;
@@ -40,20 +46,21 @@ border-radius: 50%;
 margin-left: -220px;
 box-shadow: 0 0 5px rgb(223, 4, 4);
 }
-.potrait img{
+
+.myimage{
+    height:250px;
+    width:250px;
     border-radius: 50%;
     object-fit: cover;
     margin-left: 220px;
 }
 
-.home-page{
-    display: flex;
-}
+
 
 .text{
     background-color: #5F5F46;
     width: 750px;
-    height: 35vh;
+    height: fit-content;
     margin-left: 8rem;
     margin-top: 9rem;
     padding: 20px;
@@ -67,7 +74,6 @@ box-shadow: 0 0 5px rgb(223, 4, 4);
     font-weight: 600;
     line-height: 20px;
     margin-top: 20px;
-
 }
 
 .description{
@@ -82,57 +88,81 @@ box-shadow: 0 0 5px rgb(223, 4, 4);
 
 }
 
-
-.formTitle{
-    font-size: 17px;
-    font-weight: 500;
-   text-align: center;
-}
- .myForm {
-    max-width: 500px;
-
-     margin: 0 auto;
-    
-    
-    padding: 20px;
+  @media screen and (max-width: 1176px) {
+    .text{
+      
+        width: 550px;
+        margin-top: 5rem;
      
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background: #EAEADB;
-  } 
+    }
 
-   input,
-  textarea {
-    display: block;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px; 
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    resize: none;
-  } 
-   
-  button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #0077cc;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition:  0.3s ease; 
-  }
-   
-  
-  button:hover {
-    background-color: rgba(173, 18, 187, 0.56);
-    color: rgba(200, 246, 14, 0.542);
+    .description h3{
+        left: 14rem;
+        top: 2rem;
+    }
+
+    /* .img-container{
+        height: 380px;
+        width: 430px;
+        margin-left: -200px;
+        } */
+        .img-container{
+            display: none;
+        }
+        .potrait img{
+            border-radius: 50%;
+            object-fit: cover;
+            margin-left: 220px;
+            height:180px; 
+            width:180px;
+        }
+        
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 970px) {
+    .home-page{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .text{
+      
+        width: 100%;
+        margin-top: 5rem;
+        margin-left: unset;
+        height: 15rem;
+        border-radius: 0rem;
+     
+    }
+
+    .img-container{
+        height: 500px;
+        display: unset;
+        width: 100%;
+        /* background: blue; */
+        /* justify-content: center; */
+        align-items: center;
+        border-radius: 0%;
+        margin-left: 0px;
+        box-shadow: 0 0 5px rgb(223, 4, 4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        
+        .myimage{
+            height:250px;
+            width:250px;
+            border-radius: 0%;
+            object-fit: cover;
+           margin-right: 150px;
+        }
+
+  }
+
+  @media screen and (max-width:554px){
+    
     
   }
    
