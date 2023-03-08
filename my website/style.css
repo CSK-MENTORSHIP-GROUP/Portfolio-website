@@ -131,4 +131,8 @@ box-shadow: 0 0 5px rgb(223, 4, 4);
     background-color: rgba(173, 18, 187, 0.56);
     color: rgba(200, 246, 14, 0.542);
   }
+
+  @media screen and (max-width: 1024px) {
+    
+  }
    
